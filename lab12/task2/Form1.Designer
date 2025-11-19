@@ -1,0 +1,183 @@
+namespace OrderPipeline
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            u = new TextBox();
+            comboBox1 = new ComboBox();
+            numericUpDown1 = new NumericUpDown();
+            btnProcessOrder = new Button();
+            lblStatus = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            chkExpress = new CheckBox();
+            btnShipOrder = new Button();
+            lblSubscriberStatus = new Label();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            SuspendLayout();
+            // 
+            // u
+            // 
+            u.Location = new Point(246, 46);
+            u.Name = "u";
+            u.PlaceholderText = "Enter Customer Name";
+            u.Size = new Size(150, 31);
+            u.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Laptop", "Mouse", "Keyboard" });
+            comboBox1.Location = new Point(246, 99);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(182, 33);
+            comboBox1.TabIndex = 1;
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(246, 170);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(180, 31);
+            numericUpDown1.TabIndex = 2;
+            // 
+            // btnProcessOrder
+            // 
+            btnProcessOrder.Location = new Point(84, 300);
+            btnProcessOrder.Name = "btnProcessOrder";
+            btnProcessOrder.Size = new Size(165, 34);
+            btnProcessOrder.TabIndex = 3;
+            btnProcessOrder.Text = "Process Order";
+            btnProcessOrder.UseVisualStyleBackColor = true;
+            btnProcessOrder.Click += btnProcessOrder_Click;
+            // 
+            // lblStatus
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Location = new Point(75, 370);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(205, 25);
+            lblStatus.TabIndex = 4;
+            lblStatus.Text = "Status: Waiting for order";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(75, 49);
+            label1.Name = "label1";
+            label1.Size = new Size(150, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Customer Name: ";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(75, 107);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 25);
+            label2.TabIndex = 6;
+            label2.Text = "Product: ";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(75, 176);
+            label3.Name = "label3";
+            label3.Size = new Size(84, 25);
+            label3.TabIndex = 7;
+            label3.Text = "Quantity:";
+            // 
+            // chkExpress
+            // 
+            chkExpress.AutoSize = true;
+            chkExpress.Location = new Point(214, 245);
+            chkExpress.Name = "chkExpress";
+            chkExpress.Size = new Size(165, 29);
+            chkExpress.TabIndex = 8;
+            chkExpress.Text = "Express Delivery";
+            chkExpress.UseVisualStyleBackColor = true;
+            // 
+            // btnShipOrder
+            // 
+            btnShipOrder.Location = new Point(348, 300);
+            btnShipOrder.Name = "btnShipOrder";
+            btnShipOrder.Size = new Size(112, 34);
+            btnShipOrder.TabIndex = 9;
+            btnShipOrder.Text = "Ship Order";
+            btnShipOrder.UseVisualStyleBackColor = true;
+            btnShipOrder.Click += btnShipOrder_Click;
+            // 
+            // lblSubscriberStatus
+            // 
+            lblSubscriberStatus.AutoSize = true;
+            lblSubscriberStatus.Location = new Point(484, 376);
+            lblSubscriberStatus.Name = "lblSubscriberStatus";
+            lblSubscriberStatus.Size = new Size(59, 25);
+            lblSubscriberStatus.TabIndex = 10;
+            lblSubscriberStatus.Text = "label4";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(lblSubscriberStatus);
+            Controls.Add(btnShipOrder);
+            Controls.Add(chkExpress);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(lblStatus);
+            Controls.Add(btnProcessOrder);
+            Controls.Add(numericUpDown1);
+            Controls.Add(comboBox1);
+            Controls.Add(u);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private TextBox txtCustomer;
+        private ComboBox comboBox1;
+        private NumericUpDown numericUpDown1;
+        private Button btnProcessOrder;
+        private Label lblStatus;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private CheckBox chkExpress;
+        private Button btnShipOrder;
+        private Label lblSubscriberStatus;
+        private TextBox u;
+    }
+}
